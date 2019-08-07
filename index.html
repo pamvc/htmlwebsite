@@ -1,0 +1,161 @@
+<!doctype html>
+
+<html>
+    
+    <head>
+        
+        <title>Pamela's WebPage</title>
+       
+    </head>
+    
+    <body>
+        <h1> Welcome to my website that I made about what I've learned so far about web development/HTML</h1>
+        <p id="top"> Here is some text that is <strong> BOLD </strong> </p>
+        
+        <p> Here is some <em>italic</em> text </p>
+        
+        <p> Here is some <ins>underlined</ins> text </p>
+        
+        <p> The line below is made with a horizontal rule tag, it is self closing like the line break tag </p>
+        
+        <hr> 
+        
+        <p> Here is some <sup>superscript</sup> text </p>
+        
+        <p> Here is some <sub>subscript</sub> text </p>
+        
+        <p> Here is some <del>crossed out</del> text </p>
+        
+        <hr>
+        
+        <p> Next we will create an unordered list </p>
+        
+            <ul>
+        
+                <li> <strong> Jorge </strong> </li>
+                
+                <li> <ins> Verenice </ins> </li>
+                
+                <li> <sub>  Yami  </sub></li>
+                
+                <li> <sup>  Bernardo </sup> </li>
+        
+            </ul>
+        
+        <hr> 
+        
+        <p> Next we will make an ordered list (will have numbers instead of bullet points) </p>
+        
+            <ol start= "10"> 
+            
+                <li> <strong> Jorge </strong> </li>
+                
+                <li> <ins> Verenice </ins> </li>
+                
+                <li> <sub>  Yami  </sub></li>
+                
+                <li> <sup>  Bernardo </sup> </li>
+            </ol>
+        
+        <p> Cool attirbutes that you can do with OL'S are the start = "#" and reversed, you can also specify the type of the OL type="i" gives you small roman numerals and type="a" gives you abcd </p>
+        
+        <hr> 
+        
+        <p> Now we will include an image that we found online </p>
+        
+        <img id="smiley" src="smiley%20face.jpg"> 
+        
+        <hr>
+        
+        <p> Next we will learn how to use forms to make our website interactive with form tags! </p>
+        
+        <ul>
+            <li> First attribute/tag inside the form tag is the input tag which makes a box where the user can type in, it's self closing. The input tag can have various specifications like type ="text", now its clear you want a text input. Can use the placeholder="" attribute to hint at the user to what they are supposed to put in the input box (looks faded and dissappears as soon as the user types) </li>
+            
+            <li> The next is a checbox attribute which is exactly what is sounds like.You might want to have the checkbox automatically checked, you can do that with just typing the word checked inside the input tag </li>
+            
+            <li> The radio attribute is like the checkbox attribute except you can have multiple radio boxes and you can only check off one. In order to only be able to pick one you have to link them so the program knows they are part of a set where you can only pick one out of all of them. You link them up by giving them a name. You can also use the value attribute to label the choices with a specific value which then you can store. ex: value="lovedogs" or value="hatedogs". Default choice, put the word selected in the opening option tag of the choice that you want to be the default choice</li>
+            
+            <li> The select attribute creates a drop down where you can pick from the choices given. To put choices in the drop down you use the options tag within the opening and closing of the select tag </li>
+            
+            <li> The last is the submit button which is a type of input. You can customize the submit button to say different thing by using value=""</li>
+            
+        
+        </ul>
+        
+        <form>
+            
+            <p>Name: <input type="text" placeholder="your name. duh."> </p>
+            
+            <p>CheckBox: <input type="checkbox"></p>
+            
+            <p>I love dogs: <input type="radio" name="dog"></p>
+            
+            <p>I am crazy and I like cats more <input type="radio" name="dog"></p>
+            
+            <p> Favorite Food 
+                
+            <select> 
+            
+                <option>Tacos </option>
+                <option>Pizza </option>
+                <option>Ice Cream </option>  
+                
+            </select>
+            
+            </p>
+            
+            <p>Submit Button <input type="submit" value="WE OUTTIE"> </p>
+        
+        </form>
+        
+        <hr> 
+        <p> Now we will create a table with table tags. Within the table tags you will have table rows (tr) within the table row you have table cells (td). Table heads (thead) have tr's and th tags. The words within these will be bold. If you have a table head you should put everything else in the table body. The tbody tags will not change anything it's just for organization. </p>
+        
+        <table>
+            
+            <thead>
+                <tr>
+                    <th>Siblings</th>
+                
+                </tr>
+            
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Yami</td>
+                        <td> Older Sister</td>
+            
+                </tr>
+            
+                <tr> 
+                
+                    <td>Bernardo</td>
+                
+                        <td> Younger Brother</td>
+            
+                </tr>
+                
+            </tbody>
+        
+        </table>
+        
+        <hr>
+        <p>Now we will learn how to use links or link something. Absolute Links take you to a different website. Absolute links have the http at the front <br> Here is my instagram: <a href="https://www.instagram.com/pamelavc/?hl=en"> <img src="instaLogo.png" height="70" width="70"> </a></p>
+        
+        <p> Relative links are used to link within your website. <a href = "helloworld.html"> Hello World!</a> <br> Relative links dont need any of the https stuff, it is recomended to use relative links if you are linking to your own website. </p>
+        
+        <p> Anchor links are used to link within a page. Like the back to top link that are seen on websites. This is done with ID'ing paragraphs and using that ID in href="#IDofPar". Here is the top of the website <a href="#top"> Back to Top</a> </p>
+        
+        <p>Here is the return of the smiley face <a href="#smiley"> Return to Smiley</a></p>
+        
+        <hr>
+        <p> HTML Entities are used to show coding symbols like the a tag &lt;a&gt; that we would not be able to show otherwise since they are keywords in HTML </p>
+        
+        <p>We can include content from other sites with iFrame tags </p>
+        <p>Here is one of my favorite videos: </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iBlAwyMWNbc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+    </body>
+    
+</html>
